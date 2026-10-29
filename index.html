@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerônimo Jóias | Joalheria Tradicional em Muriaé-MG há 50+ Anos</title>
+    <meta name="description" content="Joias exclusivas e atendimento personalizado em Muriaé. Anéis de noivado, alianças, colares e muito mais. ⭐ 4.8/5 no Google. Visite-nos!">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jerônimo Jóias | Tradição e Elegância em Joias">
+    <meta property="og:description" content="Há mais de 50 anos transformando momentos especiais em joias inesquecíveis">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JewelryStore",
+        "name": "Jerônimo Jóias",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Cel. Amador Pinheiro de Barros, 15 - Lj 7",
+            "addressLocality": "Muriaé",
+            "addressRegion": "MG",
+            "postalCode": "36880-030",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -21.1234,
+            "longitude": -43.5678
+        },
+        "url": "https://linktr.ee/jeronimojoias",
+        "telephone": "+5532988929178",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:15",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:15",
+                "closes": "12:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "38"
+        },
+        "priceRange": "$$$"
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#FFD700',
+                            500: '#D4AF37',
+                            600: '#B8941F',
+                        },
+                        wine: {
+                            700: '#8B0000',
+                            800: '#720000',
+                            900: '#580000',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'sparkle': 'sparkle 2s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.8s ease-in',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        sparkle: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.2)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Styles */
+        .gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+        }
+        
+        .gradient-hero {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(212, 175, 55, 0.8) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .border-gradient {
+            border-image: linear-gradient(135deg, #D4AF37, #FFD700) 1;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+        
+        .sparkle-effect {
+            position: relative;
+        }
+        
+        .sparkle-effect::before {
+            content: '✦';
+            position: absolute;
+            color: #FFD700;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B8941F;
+        }
+        
+        /* Image Hover Effects */
+        .img-zoom-container {
+            overflow: hidden;
+        }
+        
+        .img-zoom-container img {
+            transition: transform 0.5s ease;
+        }
+        
+        .img-zoom-container:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Button Shine Effect */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.3) 50%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(30deg) translate(-100%, -100%);
+            transition: transform 0.6s;
+        }
+        
+        .btn-shine:hover::after {
+            transform: rotate(30deg) translate(100%, 100%);
+        }
+        
+        /* FAQ Accordion */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-content.active {
+            max-height: 500px;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-12 h-12 rounded-full gradient-gold flex items-center justify-center">
+                        <span class="text-white font-serif text-2xl font-bold">J</span>
+                    </div>
+                    <div>
+                        <h1 class="font-serif text-2xl font-bold text-gray-900">Jerônimo Jóias</h1>
+                        <p class="text-xs text-gray-600">Desde 1970</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-gold-600 transition-colors font-medium">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-gold-600 transition-colors font-medium">Sobre</a>
+                    <a href="#colecoes" class="text-gray-700 hover:text-gold-600 transition-colors font-medium">Coleções</a>
+                    <a href="#depoimentos" class="text-gray-700 hover:text-gold-600 transition-colors font-medium">Depoimentos</a>
+                    <a href="#contato" class="text-gray-700 hover:text-gold-600 transition-colors font-medium">Contato</a>
+                    <a href="https://wa.me/5532988929178" target="_blank" class="btn-shine bg-gold-500 text-white px-6 py-2 rounded-full font-medium hover:bg-gold-600 transition-colors flex items-center space-x-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobileMenuBtn" aria-label="Menu">
+                    <i data-lucide="menu" class="w-6 h-6 text-gray-900"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-xl z-50 md:hidden" id="mobileMenu">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="font-serif text-xl font-bold">Menu</h2>
+                    <button id="closeMobileMenu" aria-label="Fechar menu">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-gold-600 transition-colors font-medium py-2">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-gold-600 transition-colors font-medium py-2">Sobre</a>
+                    <a href="#colecoes" class="text-gray-700 hover:text-gold-600 transition-colors font-medium py-2">Coleções</a>
+                    <a href="#depoimentos" class="text-gray-700 hover:text-gold-600 transition-colors font-medium py-2">Depoimentos</a>
+                    <a href="#contato" class="text-gray-700 hover:text-gold-600 transition-colors font-medium py-2">Contato</a>
+                    <a href="https://wa.me/5532988929178" target="_blank" class="bg-gold-500 text-white px-6 py-3 rounded-full font-medium text-center mt-4">
+                        WhatsApp
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80" alt="Joias elegantes" class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-hero"></div>
+        </div>
+        
+        <!-- Sparkles Animation -->
+        <div class="absolute inset-0 z-10 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-4 h-4 bg-yellow-300 rounded-full animate-sparkle"></div>
+            <div class="absolute top-1/3 right-1/4 w-3 h-3 bg-yellow-200 rounded-full animate-sparkle" style="animation-delay: 0.5s"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-2 h-2 bg-yellow-400 rounded-full animate-sparkle" style="animation-delay: 1s"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative z-20">
+            <div class="max-w-3xl animate-slide-up">
+                <!-- Badge -->
+                <div class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                    <div class="flex items-center">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-300 fill-yellow-300"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-300 fill-yellow-300"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-300 fill-yellow-300"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-300 fill-yellow-300"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-300 fill-yellow-300"></i>
+                    </div>
+                    <span class="text-white font-medium">4.8/5 - 38 Avaliações no Google</span>
+                </div>
+                
+                <!-- Headline -->
+                <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Eternizando Momentos Especiais há <span class="text-gradient">Mais de 50 Anos</span>
+                </h1>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
+                    Joias exclusivas que contam sua história com elegância e sofisticação
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <a href="#colecoes" class="btn-shine bg-gold-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gold-600 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
+                        <i data-lucide="gem" class="w-6 h-6"></i>
+                        <span>Ver Coleção Exclusiva</span>
+                    </a>
+                    <a href="https://wa.me/5532988929178?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20na%20loja" target="_blank" class="bg-white text-wine-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                        <span>Agendar Visita na Loja</span>
+                    </a>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap gap-6 text-white/90">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-gold-400"></i>
+                        <span>+50 Anos de Tradição</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-gold-400"></i>
+                        <span>Atendimento Personalizado</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-gold-400"></i>
+                        <span>Peças Exclusivas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8 text-white"></i>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="py-12 gradient-gold">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 bg-white/20 rounded-full flex items-center justify-center">
+                        <i data-lucide="award" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <p class="text-white font-semibold">+50 Anos de Tradição</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 bg-white/20 rounded-full flex items-center justify-center">
+                        <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <p class="text-white font-semibold">Atendimento Personalizado</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 bg-white/20 rounded-full flex items-center justify-center">
+                        <i data-lucide="gem" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <p class="text-white font-semibold">Peças Exclusivas</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 bg-white/20 rounded-full flex items-center justify-center">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <p class="text-white font-semibold">Garantia de Qualidade</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-3 bg-white/20 rounded-full flex items-center justify-center">
+                        <i data-lucide="credit-card" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <p class="text-white font-semibold">Parcelamento Facilitado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 gradient-gold rounded-full opacity-20"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 gradient-gold rounded-full opacity-20"></div>
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?w=800&q=80" alt="Joalheria Jerônimo Jóias" class="w-full h-auto">
+                    </div>
+                    <!-- Experience Badge -->
+                    <div class="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-xl">
+                        <p class="font-serif text-4xl font-bold text-gold-600">50+</p>
+                        <p class="text-gray-600">Anos de Experiência</p>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Tradição e Elegância em <span class="text-gradient">Cada Detalhe</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Há mais de cinco décadas, a Jerônimo Jóias transforma sonhos em realidade. Nossa paixão por joias finas e compromisso com a excelência nos tornaram referência em Muriaé e região.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Cada peça é cuidadosamente selecionada para garantir qualidade, beleza e significado. Aqui, você encontra não apenas joias, mas memórias que durarão para sempre.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Atendimento Personalizado</h3>
+                                <p class="text-gray-600">Eliane e equipe especializada prontos para te atender</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Peças Exclusivas</h3>
+                                <p class="text-gray-600">Coleções únicas para momentos especiais</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Qualidade Garantida</h3>
+                                <p class="text-gray-600">Ouro e diamantes certificados</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contato" class="btn-shine inline-flex items-center space-x-2 bg-gold-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-gold-600 transition-all">
+                        <span>Conheça Nossa Loja</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="colecoes" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Nossas <span class="text-gradient">Coleções</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Descubra peças exclusivas para cada momento da sua vida
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Collection Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67ea3459?w=600&q=80" alt="Anéis de Noivado" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Anéis de Noivado</h3>
+                    <p class="text-gray-600">O símbolo do amor eterno</p>
+                </div>
+                
+                <!-- Collection Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80" alt="Alianças" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Alianças</h3>
+                    <p class="text-gray-600">Para unir dois corações</p>
+                </div>
+                
+                <!-- Collection Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80" alt="Colares" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Colares</h3>
+                    <p class="text-gray-600">Elegância ao redor do pescoço</p>
+                </div>
+                
+                <!-- Collection Card 4 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" alt="Pulseiras" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Pulseiras</h3>
+                    <p class="text-gray-600">Beleza em cada movimento</p>
+                </div>
+                
+                <!-- Collection Card 5 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1535632000196-8991fbb8b998?w=600&q=80" alt="Brincos" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Brincos</h3>
+                    <p class="text-gray-600">Detalhes que encantam</p>
+                </div>
+                
+                <!-- Collection Card 6 -->
+                <div class="group cursor-pointer">
+                    <div class="img-zoom-container rounded-2xl overflow-hidden shadow-lg mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1524592094714-0f063f938f54?w=600&q=80" alt="Relógios" class="w-full h-80 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button class="w-full bg-gold-500 text-white py-2 rounded-full font-semibold hover:bg-gold-600 transition-colors">
+                                Explorar
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900">Relógios</h3>
+                    <p class="text-gray-600">Tempo é luxo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Peças <span class="text-gradient">Exclusivas</span>
+                </h2>
+                <p class="text-gray-600 text-lg">Destaques selecionados especialmente para você</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="img-zoom-container relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67ea3459?w=400&q=80" alt="Anel Solitário" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Mais Vendido
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-gray-900 mb-2">Anel Solitário Ouro 18k</h3>
+                        <p class="text-gray-600 text-sm mb-4">Diamante certificado</p>
+                        <button class="w-full border-2 border-gold-500 text-gold-600 py-2 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="img-zoom-container relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&q=80" alt="Alianças" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-wine-700 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Edição Limitada
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-gray-900 mb-2">Par de Alianças</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ouro 18k polido</p>
+                        <button class="w-full border-2 border-gold-500 text-gold-600 py-2 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="img-zoom-container relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" alt="Colar" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-gray-900 mb-2">Colar Corrente Veneziana</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ouro 18k 50cm</p>
+                        <button class="w-full border-2 border-gold-500 text-gold-600 py-2 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="group hover-lift bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="img-zoom-container relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1524592094714-0f063f938f54?w=400&q=80" alt="Relógio" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Novidade
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-lg font-bold text-gray-900 mb-2">Relógio Casio Gold</h3>
+                        <p class="text-gray-600 text-sm mb-4">Digital/Analógico</p>
+                        <button class="w-full border-2 border-gold-500 text-gold-600 py-2 rounded-full font-semibold hover:bg-gold-500 hover:text-white transition-all">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="depoimentos" class="py-20 bg-gradient-to-br from-gold-50 to-wine-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    O Que Nossos <span class="text-gradient">Clientes Dizem</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"A melhor joalheria de Muriaé. Atendentes são excelentes, peças maravilhosas. Nota 10 Jerônimo e Eliane."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-white font-bold text-lg">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900">Maria Do Carmo Campos</p>
+                            <p class="text-sm text-gray-500">Cliente desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Excelente atendimento, lugar organizado e confortável, ótimas atendentes. Recomendo de olhos fechados!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-wine-700 to-wine-900 flex items-center justify-center text-white font-bold text-lg">
+                            L
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900">Leticia Souza</p>
+                            <p class="text-sm text-gray-500">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex space-x-1">
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-gold-500 fill-gold-500"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Sem dúvidas um trabalho de confiança. Sou atendida sempre com a simpatia e educação de Eliane, e aprovo todas as peças."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-wine-700 flex items-center justify-center text-white font-bold text-lg">
+                            J
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900">Jorge Fernandes</p>
+                            <p class="text-sm text-gray-500">Cliente fiel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Siga <span class="text-gradient">@jeronimojoias</span>
+                </h2>
+                <p class="text-gray-600 text-lg">Acompanhe nossas novidades e inspirações</p>
+                <div class="inline-flex items-center space-x-2 mt-4 bg-gray-100 px-4 py-2 rounded-full">
+                    <i data-lucide="instagram" class="w-5 h-5 text-wine-700"></i>
+                    <span class="font-semibold text-gray-900">18.8k seguidores</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67ea3459?w=400&q=80" alt="Instagram 1" class="w-full h-full object-cover">
+                </div>
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&q=80" alt="Instagram 2" class="w-full h-full object-cover">
+                </div>
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" alt="Instagram 3" class="w-full h-full object-cover">
+                </div>
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80" alt="Instagram 4" class="w-full h-full object-cover">
+                </div>
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1535632000196-8991fbb8b998?w=400&q=80" alt="Instagram 5" class="w-full h-full object-cover">
+                </div>
+                <div class="img-zoom-container aspect-square rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f063f938f54?w=400&q=80" alt="Instagram 6" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="https://instagram.com/jeronimojoias" target="_blank" class="inline-flex items-center space-x-2 text-wine-700 font-semibold hover:text-gold-600 transition-colors">
+                    <span>Ver Mais no Instagram</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Dúvidas <span class="text-gradient">Frequentes</span>
+                </h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-gray-900">Vocês fazem orçamento para noivado?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-600 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-4 text-gray-600">Sim! Oferecemos condições especiais para noivado. Entre em contato conosco pelo WhatsApp ou visite nossa loja para um atendimento personalizado.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-gray-900">Qual o prazo de entrega?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-600 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-4 text-gray-600">Peças em estoque são entregues imediatamente. Para peças sob encomenda, o prazo varia de 15 a 30 dias úteis, dependendo da complexidade.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-gray-900">Aceitam cartão de crédito? Quantas parcelas?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-600 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-4 text-gray-600">Sim! Aceitamos cartões de crédito em até 12x sem juros. Também trabalhamos com PIX à vista com desconto especial.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-gray-900">Fazem manutenção e limpeza de joias?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-600 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-4 text-gray-600">Sim! Oferecemos serviços de limpeza, polimento e manutenção de joias. Consulte-nos para mais informações.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-gray-900">Trabalham com ouro de que quilates?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-gold-600 transform transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="pb-4 text-gray-600">Trabalhamos principalmente com ouro 18k (750), que oferece o melhor equilíbrio entre durabilidade e brilho. Todas as nossas peças são certificadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Visite Nossa <span class="text-gradient">Loja</span>
+                </h2>
+                <p class="text-gray-600 text-lg">Estamos esperando por você em Muriaé-MG</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Map -->
+                <div class="rounded-2xl overflow-hidden shadow-xl h-96">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.1234567890123!2d-43.5678!3d-21.1234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA3JzI0LjQiUyA0M8KwMzQnMDQuMSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-4">Informações de Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-gold-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Endereço</p>
+                                    <p class="text-gray-600">R. Cel. Amador Pinheiro de Barros, 15 - Lj 7<br>Centro, Muriaé - MG, 36880-030</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6 text-gold-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Telefone / WhatsApp</p>
+                                    <p class="text-gray-600">(32) 98892-9178</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="clock" class="w-6 h-6 text-gold-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Horário de Funcionamento</p>
+                                    <p class="text-gray-600">
+                                        Segunda a Sexta: 08:15 - 18:00<br>
+                                        Sábado: 08:15 - 12:00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://wa.me/5532988929178" target="_blank" class="btn-shine bg-green-500 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 hover:bg-green-600 transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            <span>Chamar no WhatsApp</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=R.+Cel.+Amador+Pinheiro+de+Barros,+15+-+Lj+7+-+Centro,+Muriaé+-+MG" target="_blank" class="border-2 border-gold-500 text-gold-600 px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 hover:bg-gold-50 transition-all">
+                            <i data-lucide="navigation" class="w-5 h-5"></i>
+                            <span>Traçar Rota</span>
+                        </a>
+                        <a href="tel:+5532988929178" class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 hover:bg-gray-50 transition-all">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            <span>Ligar Agora</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 gradient-gold relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">
+                Pronta Para Encontrar Sua Joia Perfeita?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Agende uma visita e descubra peças exclusivas selecionadas especialmente para você
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5532988929178" target="_blank" class="btn-shine bg-white text-wine-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    <span>WhatsApp: (32) 98892-9178</span>
+                </a>
+                <a href="#contato" class="bg-wine-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-wine-900 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    <span>Visitar Loja</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-12 h-12 rounded-full gradient-gold flex items-center justify-center">
+                            <span class="text-white font-serif text-2xl font-bold">J</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold">Jerônimo Jóias</h3>
+                            <p class="text-gray-400 text-sm">Desde 1970</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-md">
+                        Há mais de 50 anos transformando momentos especiais em joias inesquecíveis. Tradição, qualidade e atendimento personalizado.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/jeronimojoias" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-500 transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://facebook.com/jeronimojoias" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold-500 transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-gold-400 transition-colors">Início</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-gold-400 transition-colors">Sobre</a></li>
+                        <li><a href="#colecoes" class="text-gray-400 hover:text-gold-400 transition-colors">Coleções</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-gold-400 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>R. Cel. Amador Pinheiro de Barros, 15</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>(32) 98892-9178</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="clock" class="w-4 h-4"></i>
+                            <span>Seg-Sex: 08:15 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2026 Jerônimo Jóias - Todos os direitos reservados
+                </p>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-1">
+                        <i data-lucide="star" class="w-4 h-4 text-gold-400 fill-gold-400"></i>
+                        <span class="text-gray-400 text-sm">4.8/5 no Google</span>
+                    </div>
+                    <a href="https://linktr.ee/jeronimojoias" target="_blank" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">
+                        linktr.ee/jeronimojoias
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5532988929178?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20joias" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 z-50 animate-bounce"
+       aria-label="WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="fixed bottom-6 left-6 bg-gold-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl hover:bg-gold-600 transition-all opacity-0 invisible z-50" aria-label="Voltar ao topo">
+        <i data-lucide="chevron-up" class="w-6 h-6"></i>
+    </button>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+        });
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+        
+        // Close mobile menu when clicking on links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('active');
+                
+                if (content.classList.contains('active')) {
+                    icon.style.transform = 'rotate(45deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+        
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+                scrollTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Security: Sanitize user inputs (example function)
+        function sanitizeInput(input) {
+            const div = document.createElement('div');
+            div.textContent = input;
+            return div.innerHTML;
+        }
+        
+        // Console security notice
+        console.log('%c Segurança: Este site protege seus dados', 'color: #D4AF37; font-size: 16px; font-weight: bold');
+        console.log('%cNunca compartilhe informações sensíveis em consoles não seguros', 'color: #8B0000; font-size: 12px');
+    </script>
+</body>
+</html>
